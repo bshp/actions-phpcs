@@ -1,1 +1,1 @@
-# actions-phpcs
+# SquizLabs PHP CodeSniffer
