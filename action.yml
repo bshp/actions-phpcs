@@ -1,0 +1,21 @@
+name: 'PHP Code Style'
+description: 'PHPCS Runner'
+author: 'Jason A. Everling (JasonEverling)'
+branding:
+    icon: 'eye'
+    color: 'green'
+inputs:
+    dir:
+        description: 'Directory to Check Coding Style'
+        required: false
+        default: '.'
+    cli:
+        description: 'CLI Arguments to Run'
+        required: false
+        default: ' '
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.dir }}
+        - ${{ inputs.cli }}
