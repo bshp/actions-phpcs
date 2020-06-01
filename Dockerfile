@@ -8,6 +8,7 @@ LABEL maintainer="Jason A. Everling <jason.e***@gmail.com>"
 RUN curl -L https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar -o /phpcs
 
 COPY "entrypoint.sh" "/entrypoint.sh"
+COPY "ruleset.xml" "/opt/ruleset.xml"
 
 RUN chmod +x /entrypoint.sh && chmod a+x /phpcs
 ENTRYPOINT ["/entrypoint.sh"]

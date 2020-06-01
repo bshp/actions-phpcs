@@ -27,5 +27,5 @@ if [ ! -d "${DIR_TO_SNIFF}" ] && [ ! -f "${DIR_TO_SNIFF}" ]; then
   exit 2
 fi
 
-echo "php -d memory_limit=-1 /phpcs ${DIR_TO_SNIFF} -pv ${CLI_ARGS}"
-php -d memory_limit=-1 /phpcs ${DIR_TO_SNIFF} -pv ${CLI_ARGS}
+echo "php -d memory_limit=-1 /phpcs --standard=/opt/ruleset.xml ${DIR_TO_SNIFF} -pv ${CLI_ARGS}"
+php -d memory_limit=-1 /phpcs --standard=/opt/ruleset.xml ${DIR_TO_SNIFF} -pv ${CLI_ARGS}
