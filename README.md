@@ -3,6 +3,8 @@
 ````
 .github/workflows/phpcs.yml
 ````
+with.dir: the_directory_to_sniff  
+    
 ````
 name: phpcs
 on:
