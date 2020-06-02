@@ -6,7 +6,7 @@
 with.dir: the_directory_to_sniff  
     
 ````
-name: phpcs
+name: Coding Style
 on:
   push:
     branches: [ master ]
